@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JavaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="399dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/java2" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:onClick="click"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/left"/>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="490dp"
+        android:layout_centerHorizontal="true"
+        android:thumb="@drawable/seekb"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="543dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/changebutton"
+        android:text="@string/play_str" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="343dp"
+        app:srcCompat="@drawable/music2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="291dp"
+        android:text="安静-周杰伦"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

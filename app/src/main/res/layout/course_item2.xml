@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="2dp">
+
+    <ImageView
+        android:id="@+id/course_Image2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/fc1"
+        android:layout_marginLeft="6dp"/>
+
+    <TextView
+        android:id="@+id/course_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:text="飞船课程一" />
+</LinearLayout>
