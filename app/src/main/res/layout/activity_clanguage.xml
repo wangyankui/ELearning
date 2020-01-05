@@ -6,29 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".ClanguageActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="197dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="51dp"
-        app:srcCompat="@drawable/c2" />
-
     <Button
         android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="返回"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
 
         android:onClick="click"
-        android:drawableLeft="@drawable/left"
-        android:background="#00000000"/>
+        android:text="返回" />
 
     <cn.jzvd.JZVideoPlayerStandard
         android:id="@+id/videoplayer"
-        android:layout_width="387dp"
-        android:layout_height="196dp"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="320dp" />
+        android:layout_marginTop="41dp"
+        android:text="C语言"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="课程介绍"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:singleLine="false"
+            android:text="C语言程序设计是计算机专业学生的专业基础课程，也可以作为非计算机专业学生的程序设计课程，它是后续相关专业课程的基础；本课程通过面向过程的程序设计方法，培养学生计算思维和程序实现能力，从而能更好地利用计算机科学与技术解决专业领域的相关计算和信息处理问题。
+
+   本课程主要内容包括：C语言基础语法（数据类型、变量与常量、运算符与表达式、输入输出）、控制结构（顺序、选择、循环）的编程及常见算法、数组及应用、函数的概念及应用、指针、结构体和共用体、文件、大程序构建等知识。"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="团队老师"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="53dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/te3" />
+    </LinearLayout>
+
 </RelativeLayout>

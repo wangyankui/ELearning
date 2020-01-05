@@ -5,18 +5,31 @@ import android.transition.Fade;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentTransaction;
+
+
+/*
+① 创建一个继承RecyclerView.Adapter<VH>的Adapter类
+② 创建一个继承RecyclerView.ViewHolder的静态内部类
+③ 在Adapter中实现3个方法：
+   onCreateViewHolder()
+   onBindViewHolder()
+   getItemCount()
+*/
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder>{
 
     private List<ECourse> mcourseList;
+
     //接口
     private CourseAdapter2.ClickInterface clickInterface;
 
@@ -65,6 +78,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
     }
     @Override
     public void onBindViewHolder(ViewHolder holder,int position){
+        //将数据和控件绑定
         ECourse course = mcourseList.get(position);
         holder.courseImage.setImageResource(course.getImageId());
         holder.courseName.setText((course.getName()));
@@ -95,8 +109,11 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
     }
     @Override
     public int getItemCount(){
+
+        //返回item总条数
         return mcourseList.size();
     }
+
 
 
 }

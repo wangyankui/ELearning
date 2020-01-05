@@ -8,9 +8,22 @@ public class CourseJson {
     private String description;
     private String price;
     private String status;
-    private String openDate;
-    private String lastUpdateOn;
-    private String level;
+
+
+    public CourseJson(String id, String name, String description, String code, String price, String categoryId) {
+        this.id =id;
+        this.name=name;
+        this.description=description;
+        this.code=code;
+        this.price=price;
+        this.categoryId=categoryId;
+
+    }
+
+    public CourseJson() {
+        //重构方法
+    }
+
 
     public void setId(String id){
         this.id = id;

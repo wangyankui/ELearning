@@ -4,64 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaActivity">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="399dp"
-        android:layout_height="192dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="53dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/java2" />
+    tools:context=".ClanguageActivity">
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="退出"
-        android:onClick="click"
+        android:id="@+id/button13"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
         android:background="#00000000"
-        android:drawableLeft="@drawable/left"/>
 
-    <SeekBar
-        android:id="@+id/seekBar1"
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="490dp"
-        android:layout_centerHorizontal="true"
-        android:thumb="@drawable/seekb"
-        android:max="100"/>
+        android:onClick="click"
+        android:text="返回" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="409dp"
+        android:layout_height="237dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="543dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/changebutton"
-        android:text="@string/play_str" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="343dp"
-        app:srcCompat="@drawable/music2" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="-2dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="291dp"
-        android:text="安静-周杰伦"
-        android:textSize="24sp" />
+        android:layout_marginTop="41dp"
+        android:text="微积分"
+        android:textStyle="bold" />
 
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="课程介绍"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:singleLine="false"
+            android:text="Java是一种优秀的面向对象的语言，具有跨平台性、用途广泛、容易学习等特点，众多的开源项目都是用Java实现的，可以说Java是程序设计必学的语言。这门课程掌握Java语言、面向对象的特点，
+            掌握Java在多线程、图形用户界面、网络等方面的应用，同时要养成良好的编程习惯，能够编写有一定规模的应用程序"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="团队老师"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="53dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/te2" />
+    </LinearLayout>
 
 </RelativeLayout>

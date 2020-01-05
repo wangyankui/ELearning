@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
     TabLayout tab;
     ViewPager viewpager;
     List<Fragment> fragments;
-    String[] table = {"推荐","名师专栏","考研"};
+    String[] table = {"精选","计算机","理学"};
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 

@@ -4,22 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".network">
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="256dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="53dp"
-        app:srcCompat="@drawable/computernet" />
+    tools:context=".ClanguageActivity">
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/button13"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+
+        android:onClick="click"
+        android:text="返回" />
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="409dp"
+        android:layout_height="237dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="-2dp" />
+
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="返回"
-        android:onClick="click"
-        android:background="#00000000"
-        android:drawableLeft="@drawable/left" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="微积分"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="课程介绍"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:singleLine="false"
+            android:text="你想理解计算机网络吗？你想了解如何开发网络应用程序吗？你想深入探究计算机网络深层奥秘吗？你知道虚拟的网络世界危机四伏吗？……那么这门课程是你最佳选择！《计算机网络》课将带你认识计算机网络、了解网络应用程序开发技术、探索计算机网络深层机理、了解计算机网络安全威胁及其防护技术等内容。"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="团队老师"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="53dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/tec" />
+    </LinearLayout>
+
 </RelativeLayout>

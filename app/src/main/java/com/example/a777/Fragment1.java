@@ -110,15 +110,15 @@ public class Fragment1 extends Fragment {
 
     private void initCourse(){
         for(int i = 0;i < 2;i++) {
-            ECourse course1 = new ECourse("Andriod", R.drawable.p01,"教师1","200","$9.9");
+            ECourse course1 = new ECourse("python", R.mipmap.python,"方军","200","$9.9");
             courseList1.add(course1);
-            ECourse course2 = new ECourse("Java", R.drawable.p02,"教师2","4396","$22.6");
+            ECourse course2 = new ECourse("Java", R.mipmap.java,"杨观宝","4396","$22.6");
             courseList1.add(course2);
-            ECourse course3 = new ECourse("C语言", R.drawable.t3,"教师3","2146","$29.9");
+            ECourse course3 = new ECourse("C语言", R.mipmap.c,"王瑞","2146","$29.9");
             courseList1.add(course3);
-            ECourse course4 = new ECourse("Web", R.drawable.p04,"教师4","1900","$39.4");
+            ECourse course4 = new ECourse("Web", R.mipmap.web,"邹翔","1900","$39.4");
             courseList1.add(course4);
-            ECourse course5 = new ECourse("C语言", R.drawable.t5,"教师5","560","$48.6");
+            ECourse course5 = new ECourse("微积分", R.mipmap.gaoc,"尹军","560","$48.6");
             courseList1.add(course5);
         }
     }

@@ -107,11 +107,12 @@ public class Fragment2 extends Fragment {
     }
 
     private void initCourse(){
-        ECourse course1 = new ECourse("JavaScript",R.drawable.p01,"教师6","990","￥0.9");
+        ECourse course1 = new ECourse("JavaScript",R.mipmap.js,"迟本文","990","￥9");
         courseList1.add(course1);
-        ECourse course2 = new ECourse("微积分",R.drawable.t2,"教师7","1604","￥5.6");
+        ECourse course2 = new ECourse("Python",R.mipmap.python,"尹军","164","￥6");
         courseList1.add(course2);
-        ECourse course3 = new ECourse("计算机网络",R.drawable.p03,"教师8","1200","￥42.02");
+        ECourse course3 = new ECourse("计算机网络",R.mipmap.network,"钱近阳","1200","￥4.02");
         courseList1.add(course3);
+        ECourse course4 = new ECourse("web",R.mipmap.web,"王杨","523","￥6");
     }
 }

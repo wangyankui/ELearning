@@ -11,7 +11,7 @@
         android:layout_width="85dp"
         android:layout_height="50dp"
         android:layout_weight="1"
-        app:srcCompat="@drawable/fc1"
+
         android:layout_marginLeft="6dp"/>
 
     <TextView

@@ -65,13 +65,13 @@ public class pythonActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python);
-        textView = (TextView)findViewById(R.id.textView12);
+        textView = (TextView)findViewById(R.id.textView13);
 
         //过渡动画
         getWindow().setEnterTransition(new Fade().setDuration(2000));
         getWindow().setExitTransition(new Fade().setDuration(2000));
 
-        final VideoView videoView = (VideoView)this.findViewById(R.id.videoView);
+        final VideoView videoView = (VideoView)this.findViewById(R.id.videoplayer);
         //加载指定的视频文件
         String path = "http://techslides.com/demos/sample-videos/small.mp4";
         String uri = "http://jzvd.nathen.cn/c6e3dc12a1154626b3476d9bf3bd7266/6b56c5f0dc31428083757a45764763b0-5287d2089db37e62345123a1be272f8b.mp4";

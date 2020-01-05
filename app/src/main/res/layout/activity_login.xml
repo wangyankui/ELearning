@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    android:clickable="true">
+    android:background="@mipmap/bg"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
@@ -18,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="295dp"
-            android:layout_height="379dp"
+            android:layout_height="371dp"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -29,14 +31,14 @@
                 <View
                     android:layout_width="8dp"
                     android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:background="#2fa881" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:text="登录"
                     android:textColor="#FFCC00"
                     android:textSize="18sp"
@@ -48,7 +50,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:paddingLeft="50dp"
+                android:paddingStart="50dp"
                 android:paddingRight="30dp">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -101,7 +103,7 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:paddingLeft="50dp"
-                android:paddingRight="30dp">
+                android:paddingEnd="30dp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="106dp"
@@ -112,8 +114,9 @@
                         android:id="@+id/yzm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:autofillHints=""
                         android:background="@drawable/selector_bg_edit"
-                        android:hint="验证码"
+                        android:hint="@string/yzm"
                         android:inputType="text"
                         android:paddingBottom="2dp"
                         android:textColor="#2fa881"
@@ -136,7 +139,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
 
-                            android:background="@drawable/v_code"
 
                             android:paddingBottom="2dp"
                             android:textCursorDrawable="@drawable/bg_input_cursor"
@@ -147,9 +149,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:clickable="true"
+                            android:focusable="true"
                             android:onClick="click"
                             android:paddingBottom="2dp"
-                            android:text="看不清？换一张"
+                            android:text="@string/nosee"
                             android:textColor="#2fa881"
                             android:textCursorDrawable="@drawable/bg_input_cursor"
                             android:textSize="12sp" />
@@ -197,28 +200,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="48dp"
-                    android:layout_height="47dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="79dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/qq1" />
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
-                    android:layout_width="41dp"
-                    android:layout_height="41dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="161dp"
-                    android:layout_marginTop="9dp"
-                    android:background="@drawable/wechat2"/>
-            </RelativeLayout>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -230,7 +212,7 @@
         android:layout_alignTop="@id/cv"
         android:layout_alignRight="@id/cv"
         android:layout_marginTop="25dp"
-        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
         android:onClick="onClick"
         android:src="@drawable/plus"
         android:transitionName="loginFab"

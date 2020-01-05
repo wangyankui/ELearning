@@ -1,5 +1,8 @@
 package com.example.a777;
-
+/*
+* c语言
+*
+* */
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -17,7 +20,7 @@ public class ClanguageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_clanguage);
         JZVideoPlayerStandard jzVideoPlayerStandard = (JZVideoPlayerStandard) findViewById(R.id.videoplayer);
         jzVideoPlayerStandard.setUp("http://jzvd.nathen.cn/c6e3dc12a1154626b3476d9bf3bd7266/6b56c5f0dc31428083757a45764763b0-5287d2089db37e62345123a1be272f8b.mp4"
-               , JZVideoPlayerStandard.SCREEN_LAYOUT_NORMAL, "看一看");
+               , JZVideoPlayerStandard.SCREEN_LAYOUT_NORMAL, "视频介绍");
 
         //过渡动画
         getWindow().setEnterTransition(new Fade().setDuration(2000));

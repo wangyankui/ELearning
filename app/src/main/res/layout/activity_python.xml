@@ -4,39 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".pythonActivity">
-
-
+    tools:context=".ClanguageActivity">
+    <include layout="@layout/activity_vplayer"/>
 
     <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="返回"
-        android:onClick="click"
-        android:gravity="left|center_vertical"
-        android:drawableLeft="@drawable/left"
-        android:background="#00000000"/>
+        android:id="@+id/button13"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="390dp"
-        android:layout_height="217dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp" />
+        android:background="#00000000"
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="match_parent"
-        android:layout_height="245dp"
+        android:onClick="click"
+        android:text="返回" />
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="413dp"
+        android:layout_height="237dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="19dp"
-        android:text="您已打开安卓课程.\n"
-        android:textSize="24sp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="-2dp" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="微积分"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="153dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="课程介绍"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:singleLine="false"
+            android:text="计算机是运算工具，更是创新平台，高效有趣地利用计算机需要更简洁实用的编程语言。Python简洁却强大、简单却专业，它是当今世界最受欢迎的编程语言，学好它终身受用。请跟随我们，学习并掌握Python语言，一起动起来，站在风口、享受创新！"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="团队老师"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="53dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/tec" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -29,7 +29,7 @@ public class WebActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    String url1 = "http://169.254.5.82:8080/elearn/courses/002";
+                    String url1 = "  ";
                     URL url = new URL(url1);
                     //得到connection对象。
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
